@@ -1,0 +1,145 @@
+@import url(../../variables.css);
+
+.nav {
+  min-height: 6.25rem;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.nav .navBrand {
+  display: block;
+  text-decoration: none;
+  margin: auto 0;
+  margin-left: 1.5rem;
+  padding-top: 1.5625rem;
+  font-family: var(--artifika);
+  font-size: 1.6875rem;
+}
+
+@media (min-width: 950px) {
+  .nav .navBrand {
+    padding-top: 0;
+    margin-left: 2.875rem;
+  }
+}
+
+.navBrand span {
+  transform: rotate(-180deg);
+  float: left;
+}
+
+.nav .navbar-list {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  margin-right: 55px;
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  max-height: 0;
+  transition: max-height 0.7s ease-out;
+}
+
+@media (min-width: 950px) {
+  .nav .navbar-list {
+    width: auto;
+    display: flex;
+    max-height: none;
+  }
+}
+
+.nav .navbar-list li {
+  text-align: center;
+  margin-top: 0.625rem;
+  padding: 12px 25px;
+  list-style: none;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.74);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-family: var(--sf-compact);
+  height: 1.25rem;
+}
+
+@media (min-width: 950px) {
+  .nav li {
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+  }
+  .nav li:not(:last-child) {
+    margin-right: 0.875rem;
+  }
+}
+.nav .list-icon {
+  margin-top: 1.375rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+  margin-left: auto;
+}
+
+@media (min-width: 950px) {
+  .nav .list-icon {
+    display: none;
+  }
+}
+
+.nav .list-icon .navicon {
+  margin-left: auto;
+  background: var(--secondary-color);
+  display: inline-block;
+  height: 3.5px;
+  width: 50px;
+  position: relative;
+}
+
+.nav .list-icon .navicon:before,
+.nav .list-icon .navicon:after {
+  background: var(--secondary-color);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.nav .list-icon .navicon:before {
+  top: 12px;
+}
+
+.nav .list-icon .navicon:after {
+  top: -12px;
+}
+
+.nav .list-btn {
+  display: none;
+}
+
+.nav .list-btn:checked ~ .navbar-list {
+  max-height: 600px;
+}
+
+.nav .list-btn:checked ~ .list-icon .navicon {
+  background: transparent;
+}
+
+.nav .list-btn:checked ~ .list-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.nav .list-btn:checked ~ .list-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.nav .list-btn:checked ~ .list-icon:not(.steps) .navicon:before,
+.nav .list-btn:checked ~ .list-icon:not(.steps) .navicon:after {
+  top: 0;
+}
