@@ -10,9 +10,8 @@
   align-items: center;
 }
 
-.nav .navBrand {
+.nav h1 {
   display: block;
-  text-decoration: none;
   margin: auto 0;
   margin-left: 1.5rem;
   padding-top: 1.5625rem;
@@ -21,13 +20,19 @@
 }
 
 @media (min-width: 950px) {
-  .nav .navBrand {
+  .nav h1 {
     padding-top: 0;
     margin-left: 2.875rem;
   }
 }
 
-.navBrand span {
+.nav .navbar-brand {
+  text-decoration: none;
+  color: var(--secondary-color);
+  
+}
+
+h1 span {
   transform: rotate(-180deg);
   float: left;
 }
@@ -71,9 +76,7 @@
 }
 
 @media (min-width: 950px) {
-  .nav li {
-    display: flex;
-    justify-content: right;
+  .nav .navbar-list li {
     margin-top: 0;
   }
   .nav li:not(:last-child) {
@@ -81,7 +84,6 @@
   }
 }
 .nav .list-icon {
-  margin-top: 1.375rem;
   cursor: pointer;
   display: inline-block;
   padding: 10px 10px;
