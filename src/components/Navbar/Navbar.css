@@ -9,6 +9,7 @@
   width: 100%;
   align-items: center;
   position: fixed;
+  z-index: 1;
 }
 
 .nav h1 {

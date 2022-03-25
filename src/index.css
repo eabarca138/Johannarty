@@ -5,6 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  position: relative;
+  background-color: #141414;
+}
+
+body::before {
+  content: "";
+  background-color: #1C1C1C;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 80% 0%, 0 100%, 0 0);
+  
 }
 
 code {
@@ -34,7 +50,7 @@ code {
  * Remove the margin in all browsers.
  */
 
-body {
+body, h2 {
   margin: 0;
 }
 

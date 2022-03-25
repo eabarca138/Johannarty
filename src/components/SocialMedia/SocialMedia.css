@@ -1,0 +1,43 @@
+.container {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-bottom: 100px;
+    }
+    
+.item {
+    position: relative;
+    padding-top: 0.9375rem;
+    text-align: center;
+}
+.item:last-of-type {
+    padding-top: 2.4rem;
+}
+.beatport-img {
+    width: 115px;
+}
+
+
+.item a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+@media(min-width: 768px) {
+    .container {
+        margin: auto 10rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1300px) {
+    .container {
+        margin: auto 17rem;
+    }
+}
