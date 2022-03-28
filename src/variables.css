@@ -1,11 +1,16 @@
 @import url("http://fonts.cdnfonts.com/css/sf-compact-display");
+@import url("http://fonts.cdnfonts.com/css/mollen-personal-use");
+
 
 :root {
   /* colors */
   --primary-color: #f5f5f5;
+  --bg-primary: #252525;
   --secondary-color: #000000;
+  --p-color: #a7a7a7;
   /* fonts */
   --artifika: "Artifika", serif;
   --sf-compact: "SF Compact Display", sans-serif;
   --roboto: 'Roboto', sans-serif;
+  --mollen: "Mollen Personal Use", sans-serif;
 }

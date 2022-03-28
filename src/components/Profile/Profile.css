@@ -1,0 +1,50 @@
+.profile {
+    padding-top: 120px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 auto;
+}
+.profile h2 {
+    padding: 30px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-family: var(--artifika);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile img {
+    width: 100%;
+}
+
+.description {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 8rem;
+}
+
+.description p {
+    color: var(--p-color);
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+    font-family: var(--mollen);
+    text-align: justify;
+}
+
+
+@media (min-width: 950px) {
+  .description {
+    width: 50%;
+    font-size: 1.0188rem;
+}
+}
+
+@media (min-width: 575px) {
+    .profile {
+    width: 540.4px;
+    padding-top: 80px;
+  }
+}

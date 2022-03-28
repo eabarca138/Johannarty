@@ -1,8 +1,8 @@
 @import url(../../variables.css);
 
 .nav {
-  min-height: 6.25rem;
-  background-color: var(--primary-color);
+  min-height: 5rem;
+  background-color: var(--bg-primary);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -19,6 +19,7 @@
   padding-top: 1.5625rem;
   font-family: var(--artifika);
   font-size: 1.6875rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 950px) {
@@ -30,13 +31,13 @@
 
 .nav .navbar-brand {
   text-decoration: none;
-  color: var(--secondary-color);
-  
+  color: var(--primary-color);
 }
 
 h1 span {
   transform: rotate(-180deg);
-  float: left;
+  position: absolute;
+  left: 28px;
 }
 
 .nav .navbar-list {
@@ -102,7 +103,7 @@ h1 span {
 
 .nav .list-icon .navicon {
   margin-left: auto;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   display: inline-block;
   height: 3.5px;
   width: 50px;
@@ -111,7 +112,7 @@ h1 span {
 
 .nav .list-icon .navicon:before,
 .nav .list-icon .navicon:after {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   content: "";
   display: block;
   height: 100%;

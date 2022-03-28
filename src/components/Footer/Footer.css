@@ -6,8 +6,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--primary-color);
+    background: var(--bg-primary);
     font-family: var(--roboto);
+}
+footer p {
+    color: var(--p-color);
 }
 
 @media(min-width: 560px) {
