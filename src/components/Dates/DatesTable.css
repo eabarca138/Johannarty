@@ -1,0 +1,44 @@
+.container {
+    margin-top: 0;
+}
+
+Table {
+    color: var(--p-color);
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    border-collapse: collapse;
+}
+Th {
+    padding-left: 2rem;
+}
+Td {
+    border-top: 1px solid rgb(73, 73, 73);
+    padding-left: 2rem;
+}
+Td:first-child {    
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+}
+
+Tr {
+    background: #000;
+}
+@media(min-width: 768px) {
+    Tr {
+        height: 4rem;
+    }
+}
+
+button {
+    color: rgb(255, 0, 0);
+    padding: .6rem;
+    background-color: #000;
+    border: 1px solid rgb(119, 5, 5);
+}
+button:hover {
+    background-color: rgb(119, 5, 5);
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}

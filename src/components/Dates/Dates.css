@@ -1,0 +1,14 @@
+.title {
+    padding-top: 10rem;
+}
+
+.container2 {
+    padding-top: 8rem;
+    width: 100%;
+}
+@media(min-width: 560px) {
+    .container2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

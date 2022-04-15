@@ -62,9 +62,9 @@ const Contact = () => {
 
         <div id="enviar">
           {loader ?
-          <div class="lds-ripple"><div></div><div></div></div>
+          <div className="lds-ripple"><div></div><div></div></div>
           :
-          <input type="submit" class="btn-submit" value="Submit" />
+          <input type="submit" className="btn-submit" value="Submit" />
           }
         </div>
       </form>

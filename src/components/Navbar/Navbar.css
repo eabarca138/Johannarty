@@ -38,6 +38,12 @@ h1 span {
   transform: rotate(-180deg);
   position: absolute;
   left: 28px;
+  display: none;
+}
+@media (min-width: 950px) {
+  h1 span {
+    display: inline-block;
+  }
 }
 
 .nav .navbar-list {
@@ -62,7 +68,7 @@ h1 span {
 
 .nav .navbar-list li {
   text-align: center;
-  margin-top: 0.625rem;
+  margin-top: 0;
   padding: 12px 25px;
   list-style: none;
   border-radius: 0.625rem;
@@ -76,15 +82,17 @@ h1 span {
 .navbar-list .navbar-item {
   color: var(--primary-color);
   text-decoration: none;
+  margin-top: 0.625rem;
+}
+.navbar-list .navbar-item:not(:last-child) {
+  margin-right: 0.875rem;
 }
 
 @media (min-width: 950px) {
   .nav .navbar-list li {
     margin-top: 0;
   }
-  .nav li:not(:last-child) {
-    margin-right: 0.875rem;
-  }
+
 }
 .nav .list-icon {
   cursor: pointer;
